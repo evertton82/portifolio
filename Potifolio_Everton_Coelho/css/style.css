@@ -1,0 +1,548 @@
+/*Geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: white;
+
+}
+
+.black-background {
+    background-color: black;
+    height: 100vh;
+    text-align: center;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*Cabeçalho*/
+header {
+    padding: 40px 4%;
+}
+
+header .menu {
+    box-shadow: 0 0 2px white;
+    border-radius: 30px;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(75, 75, 75);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+    border: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+    cursor: pointer;
+}
+
+header .contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #218838;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+h1 {
+    color: rgb(153, 153, 156);
+    text-align: center;
+}
+
+/*Centro Site*/
+.profile-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/*Texto de boas-vindas*/
+.boasvindas-text {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 100px;
+    border-radius: 15px;
+}
+
+/*Carrosel*/
+.carousel {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 100px auto;
+    max-width: 1200px;
+    background-color: #218838;
+    padding: 100px;
+    border-radius: 15px;
+    overflow-y: auto;
+    opacity: 0.5;
+}
+
+#portfolio {
+    background-color: #000000;
+    color: #000000;
+}
+
+/* Projetos */
+
+.text-center {
+
+    color: white;
+}
+
+.popover {
+    display: none;
+    position: absolute;
+    background-color: rgb(216, 216, 216);
+    color: #000;
+    border: 1px solid #11c72f;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 10;
+    width: 200px;
+}
+
+.popover h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.popover p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.popover-link {
+    position: relative;
+    cursor: pointer;
+}
+
+.popover-link:hover+.popover,
+.popover:hover {
+    display: block;
+}
+
+.techlinks li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.techlinks li .popover {
+    top: 20px;
+    left: 0;
+}
+
+/*Contato*/
+#contato {
+    min-height: auto;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin: 100px auto;
+    max-width: 750px;
+    background-color: rgb(153, 153, 156);
+    padding: 60px;
+    border-radius: 15px;
+    overflow-y: auto;
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: #dfd5d5;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    background-color: #dfd5d5;
+}
+
+form .text-center button {
+    width: 80px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #51a85c;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+form .text-center button:hover {
+    background-color: #2d9253;
+}
+
+/*Rodapé*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(153, 153, 156);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 17px;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+
+}
+
+/* Ícones */
+footer a i {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito de zoom e sombra ao passar o mouse */
+footer a i:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Css Time Line */
+body {
+    background-color: #f7f7f7;
+    margin-top: 20px;
+}
+
+.main-timeline {
+    position: relative;
+}
+
+.main-timeline:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: #ffffff;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.main-timeline .timeline {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.main-timeline .timeline:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main-timeline .icon {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.main-timeline .icon:before,
+.main-timeline .icon:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.33s ease-out 0s;
+}
+
+.main-timeline .icon:before {
+    background: #fff;
+    border: 2px solid #232323;
+    left: -3px;
+}
+
+.main-timeline .icon:after {
+    border: 2px solid #c6c6c6;
+    left: 3px;
+}
+
+.main-timeline .timeline:hover .icon:before {
+    left: 3px;
+}
+
+.main-timeline .timeline:hover .icon:after {
+    left: -3px;
+}
+
+.main-timeline .date-content {
+    width: 50%;
+    float: left;
+    margin-top: 22px;
+    position: relative;
+    color: #ffffff;
+}
+
+.main-timeline .date-content:before {
+    content: "";
+    width: 36.5%;
+    height: 2px;
+    background: #c6c6c6;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+}
+
+.main-timeline .date-outer {
+    width: 125px;
+    height: 125px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    z-index: 1;
+}
+
+.main-timeline .date-outer:before,
+.main-timeline .date-outer:after {
+    content: "";
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.33s ease-out 0s;
+}
+
+.main-timeline .date-outer:before {
+    background: #696969;
+    border: 2px solid #232323;
+    left: -6px;
+}
+
+.main-timeline .date-outer:after {
+    border: 2px solid #c6c6c6;
+    left: 6px;
+}
+
+.main-timeline .timeline:hover .date-outer:before {
+    left: 6px;
+}
+
+.main-timeline .timeline:hover .date-outer:after {
+    left: -6px;
+}
+
+.main-timeline .date {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 27%;
+    left: 0;
+    color: #000000;
+}
+
+.main-timeline .month {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.main-timeline .year {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 36px;
+}
+
+.main-timeline .timeline-content {
+    width: 50%;
+    padding: 20px 0 20px 50px;
+    float: right;
+    color: #ffffff;
+}
+
+.main-timeline .title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+    color: #2d9253;
+}
+
+.main-timeline .description {
+    margin-bottom: 0;
+    color: #ffffff;
+    text-align: left;
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content {
+    float: right;
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content:before {
+    left: 10px;
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-content {
+    padding: 20px 50px 20px 0;
+    text-align: right;
+}
+
+@media only screen and (max-width: 991px) {
+    .main-timeline .date-content {
+        margin-top: 35px;
+    }
+
+    .main-timeline .date-content:before {
+        width: 22.5%;
+    }
+
+    .main-timeline .timeline-content {
+        padding: 10px 0 10px 30px;
+    }
+
+    .main-timeline .title {
+        font-size: 17px;
+    }
+
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        padding: 10px 30px 10px 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-timeline:before {
+        margin: 0;
+        left: 7px;
+    }
+
+    .main-timeline .timeline {
+        margin-bottom: 20px;
+    }
+
+    .main-timeline .timeline:last-child {
+        margin-bottom: 0;
+    }
+
+    .main-timeline .icon {
+        margin: auto 0;
+    }
+
+    .main-timeline .date-content {
+        width: 95%;
+        float: right;
+        margin-top: 0;
+    }
+
+    .main-timeline .date-content:before {
+        display: none;
+    }
+
+    .main-timeline .date-outer {
+        width: 110px;
+        height: 110px;
+    }
+
+    .main-timeline .date-outer:before,
+    .main-timeline .date-outer:after {
+        width: 110px;
+        height: 110px;
+    }
+
+    .main-timeline .date {
+        top: 30%;
+    }
+
+    .main-timeline .year {
+        font-size: 24px;
+    }
+
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        width: 95%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .main-timeline .title {
+        margin-bottom: 10px;
+    }
+}
+
+.timeline-content a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*Voltar ao Topo*/
+#voltar-ao-topo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 99;
+}
+
+#voltar-ao-topo:hover {
+    background-color: #555;
+}
